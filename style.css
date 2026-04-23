@@ -96,7 +96,7 @@ header .container {
     color: black;
 }
 .header__bottom__menu .underlined {
-    border-bottom: 4px dotted #8B5CF6;
+    border-bottom: 2px dashed #8B5CF6;
 }
 .header__bottom__menu ul li:nth-child(2n + 1) a {
     color: #8B5CF6;
@@ -137,6 +137,7 @@ header .container {
     background-size: 100%;
     background-position-y: -94px;
     transform: scaleX(-1);
+    border-radius: 16px;
 }
 .delivery__right {
     padding: 24px;
@@ -500,9 +501,26 @@ footer {
 .footer__bottom__right {
     display: flex;
     flex-shrink: 0;
+    max-width: 242px;
+    text-align: right;
+    color: #6B7280;
 }
 .footer__bottom__right a {
     color: inherit;
+}
+.header__bottom__prices {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 12px;
+}
+.header__bottom__prices p {
+    font-size: 14px;
+    max-width: 232px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
 }
 @media (max-width: 1536px) {
     .reviews__slider__blocks {
@@ -557,5 +575,154 @@ footer {
     }
     .reviews__slider__right_button {
         right: 4px;
+    }
+}
+@media (max-width: 1536px) {
+    .form_question {
+        margin-top: 48px;
+    }
+    footer {
+        margin-top: 48px;
+    }
+    .advantage {
+        margin-top: 48px;
+    }
+    .reviews {
+        margin-top: 48px;
+    }
+    .container {
+        max-width: 1026px;
+    }
+    .header__right__number__top {
+        font-size: 30px;
+    }
+    .header__right__number__bottom {
+        font-size: 20px;
+    }
+    .delivery .container {
+        flex-direction: column;
+    }
+    .delivery__right {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+    .delivery {
+        margin-top: 48px;
+    }
+    .delivery__left__text p {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .delivery__left__text h1 {
+        font-size: 30px;
+    }
+    .delivery__left {
+        display: flex;
+        flex-direction: row;
+        min-width: 100%;
+    }
+    .delivery__left__image {
+        width: 505px;
+        height: 232px;
+        flex-shrink: 0;
+        margin-right: 16px;
+    }
+    .guarantees .container {
+        justify-content: center;
+    }
+    .container .guarantees__block:nth-child(2n-1) {
+        margin-right: 24px;
+    }
+    .footer__top__right__number__top {
+        font-size: 30px;
+    }
+    .footer__top__right__number__bottom {
+        font-size: 20px;
+    }
+}
+.show-1024 {
+    display: none;
+}
+@media (min-width: 1110px) and (max-width: 1536px) {
+    footer .container {
+        max-width: 1152px;
+    }
+}
+@media (max-width: 1110px) {
+    .footer__top {
+        flex-wrap: wrap;
+    }
+    .footer__top__center {
+        width: 100%;
+        order: 1;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+    .footer__top__left {
+        order: 2;
+    }
+    .footer__top__right {
+        order: 3;
+        justify-content: center;
+    }
+    .footer__bottom {
+        flex-direction: column;
+    }
+    .footer__bottom__left {
+        margin-right: 0px;
+        text-align: center;
+    }
+    .footer__bottom__right {
+        max-width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 8px;
+    }
+}
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+    .hide-1024 {
+        display: none;
+    }
+    .show-1024 {
+        display: flex;
+    }
+    .header__bottom {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-top: 2px solid #A78BFA;
+        border-bottom: 2px solid #A78BFA;
+        margin-top: 12px;
+    }
+    .delivery__left {
+        flex-direction: column;
+    }
+    .delivery__left__text {
+        margin-bottom: 16px;
+    }
+    .delivery__left__image {
+        width: 100%;
+        height: 350px;
+    }
+    .advantage__block h3 {
+        font-size: 20px;
+    }
+    .advantage__block p {
+        font-size: 14px;
+    }
+    .advantage__block {
+        padding-left: 120px;
+        background-size: 108px;
+        background-position-x: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        min-height: unset;
+        max-width: 372px;
+    }
+    .reviews__slider__review {
+        min-height: 224px;
     }
 }
