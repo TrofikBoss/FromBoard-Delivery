@@ -33,3 +33,7 @@ document.querySelector(".reviews__slider__right_button").onclick = () => {
         })
     }
 }
+
+document.querySelector(".header__top__menu__button").onclick = () => {
+    document.querySelector("header").classList.toggle("header__menu__closed");
+}
