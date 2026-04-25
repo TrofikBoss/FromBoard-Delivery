@@ -14,6 +14,10 @@ h2 {
     font-size: 30px;
     margin-top: 0px;
 }
+*::selection {
+    background-color: #8B5CF6;
+    color: white;
+}
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -110,6 +114,20 @@ header .container {
     padding: 10px 28px;
     box-sizing: border-box;
     border-radius: 4px;
+    transition-duration: 0.3s;
+}
+.header__bottom__menu__button:hover {
+    background-color: #A78BFA;
+}
+.header__bottom__menu__button:active {
+    background-color: #6D28D9;
+}
+.header__bottom__menu__button:focus-visible {
+    background-color: #A78BFA;
+}
+*:focus-visible {
+    outline-offset: 4px;
+    outline: 3px dashed #9747FF;
 }
 .header__bottom {
     margin-top: 24px;
@@ -185,6 +203,19 @@ form input {
     border: 3px solid;
     border-radius: 4px;
     margin-bottom: 24px;
+}
+form input::placeholder {
+    color: #9CA3AF;
+}
+form input:hover::placeholder {
+    color: black;
+}
+form input:active, form input:focus {
+    border: 3px solid #8B5CF6;
+    outline: none;
+}
+form input:active::placeholder, form input:focus::placeholder {
+    color: #8B5CF6;
 }
 form textarea {
     width: 100%;
@@ -327,6 +358,27 @@ form button {
     text-decoration: none;
     margin-top: 36px;
 }
+.guarantees__button:hover {
+    background-color: #A78BFA;
+}
+.guarantees__button:active {
+    background-color: #6D28D9;
+}
+.guarantees__button:focus-visible {
+    background-color: #A78BFA;
+}
+form button {
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #A78BFA;
+}
+form button:active {
+    background-color: #6D28D9;
+}
+form button:focus-visible {
+    background-color: #A78BFA;
+}
 .reviews {
     margin-top: 72px;
 }
@@ -382,6 +434,12 @@ form button {
     cursor: pointer;
     position: absolute;
     top: calc(50% - 30px);
+}
+.reviews__slider__left_button:hover, .reviews__slider__right_button:hover {
+    filter: brightness(1.4);
+}
+.reviews__slider__left_button:active, .reviews__slider__right_button:active {
+    filter: brightness(0.8);
 }
 .reviews__slider__left_button {
     background-image: url(img/slider_left.svg);
