@@ -2,6 +2,7 @@ body {
     font-family: "Formular";
     background-color: #E5E7EB;
     margin: 0px;
+    transition-duration: 0.3s;
 }
 header {
     padding-top: 24px;
@@ -793,6 +794,12 @@ footer {
     }
     .footer__top__right {
         margin-bottom: 8px;
+    }
+    body:not(:has(.header__menu__closed)) section {
+        filter: brightness(0.5);
+    }
+    body:not(:has(.header__menu__closed)) {
+        backdrop-filter: brightness(0.5);
     }
 }
 @media (max-width: 560px) {
